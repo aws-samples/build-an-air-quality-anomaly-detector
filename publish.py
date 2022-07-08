@@ -10,7 +10,7 @@ import csv
 
 
 # Define ENDPOINT, CLIENT_ID, PATH_TO_CERTIFICATE, PATH_TO_PRIVATE_KEY, PATH_TO_AMAZON_ROOT_CA_1, MESSAGE, TOPIC, and RANGE
-ENDPOINT = "<customEndpointUrl>"
+ENDPOINT = "customEndpointUrl"
 CLIENT_ID = "testDevice"
 PATH_TO_CERTIFICATE = "certificates/123-certificate.pem.crt"
 PATH_TO_PRIVATE_KEY = "certificates/123-private.pem.key"
@@ -28,7 +28,7 @@ import codecs
 import datetime 
 from datetime import timedelta
 # declare S3 variables and read the CSV content from S3 bucket.
-targetBucket = '<Provide your S3 Bucket>'
+targetBucket = 'Your_S3_Bucket_Name'
 csvFile = 'live_data_sample.csv'
 s3_client = boto3.client(service_name='s3')
 # get S3 object
