@@ -1,6 +1,3 @@
-# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-# SPDX-License-Identifier: MIT-0
-
 from awscrt import io, mqtt, auth, http
 from awsiot import mqtt_connection_builder
 import time as t
@@ -13,10 +10,10 @@ import csv
 
 
 # Define ENDPOINT, CLIENT_ID, PATH_TO_CERTIFICATE, PATH_TO_PRIVATE_KEY, PATH_TO_AMAZON_ROOT_CA_1, MESSAGE, TOPIC, and RANGE
-ENDPOINT = "azgrnba37wqg0-ats.iot.us-east-1.amazonaws.com"
+ENDPOINT = "<customEndpointUrl>"
 CLIENT_ID = "testDevice"
-PATH_TO_CERTIFICATE = "certificates/ed30ad5b2298ae8c3169646669485ba25be2dd3b8a8ff0904794b644ad7ea144-certificate.pem.crt"
-PATH_TO_PRIVATE_KEY = "certificates/ed30ad5b2298ae8c3169646669485ba25be2dd3b8a8ff0904794b644ad7ea144-private.pem.key"
+PATH_TO_CERTIFICATE = "certificates/123-certificate.pem.crt"
+PATH_TO_PRIVATE_KEY = "certificates/123-private.pem.key"
 PATH_TO_AMAZON_ROOT_CA_1 = "certificates/root.pem"
 #MESSAGE = data
 TOPIC = "test/testing"
@@ -31,7 +28,7 @@ import codecs
 import datetime 
 from datetime import timedelta
 # declare S3 variables and read the CSV content from S3 bucket.
-targetBucket = 'air-quality-data-bucket'
+targetBucket = '<Provide your S3 Bucket>'
 csvFile = 'live_data_sample.csv'
 s3_client = boto3.client(service_name='s3')
 # get S3 object
