@@ -3,7 +3,7 @@ Today, air pollution is a familiar environmental issue that creates severe respi
 
 The process of applying AI and machine learning (ML)-based solutions to find data anomalies involves a lot of complexity in ingesting, curating, and preparing data in the right format and then optimizing and maintaining the effectiveness of these ML models over long periods of time. This has been one of the barriers to quickly implementing and scaling the adoption of ML capabilities.
 
-This post shows you how to use an integrated solution with Amazon Lookout for Metrics and Amazon Kinesis Data Firehose to break these barriers by quickly and easily ingesting streaming data, and subsequently detecting anomalies in the key performance indicators of your interest.
+This solution shows you how to use an integrated solution with Amazon Lookout for Metrics and Amazon Kinesis Data Firehose to break these barriers by quickly and easily ingesting streaming data, and subsequently detecting anomalies in the key performance indicators of your interest.
 
 Lookout for Metrics automatically detects and diagnoses anomalies (outliers from the norm) in business and operational data. It’s a fully managed ML service that uses specialized ML models to detect anomalies based on the characteristics of your data. For example, trends and seasonality are two characteristics of time series metrics in which threshold-based anomaly detection doesn’t work. Trends are continuous variations (increases or decreases) in a metric’s value. On the other hand, seasonality is periodic patterns that occur in a system, usually rising above a baseline and then decreasing again. You don’t need ML experience to use Lookout for Metrics.
 
